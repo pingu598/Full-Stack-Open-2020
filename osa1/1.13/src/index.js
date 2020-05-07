@@ -11,7 +11,7 @@ const Button = ({ onClick, text }) => (
 const RandomNum = () => {
 
     return (
-        Math.floor(Math.random() * 2)     
+        Math.floor(Math.random() * 5)     
     )
 }
 
