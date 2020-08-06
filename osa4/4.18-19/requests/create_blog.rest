@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "TEST POST FOR BLOGS",
+    "author": "pasi",
+    "url": "www.google.com",
+    "likes": 5,
+    "userId": "5f219bf310bb7018c86468bb"
+}
