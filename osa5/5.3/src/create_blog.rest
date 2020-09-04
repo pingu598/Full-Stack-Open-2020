@@ -1,0 +1,11 @@
+POST http://localhost:3000/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI1ZjIxOWJmMzEwYmI3MDE4Yzg2NDY4YmIiLCJpYXQiOjE1OTkwNjI4ODN9.LC6GD_IdqUydU8QLeyGOpfoetDGCtVDhPnnKaLo3gww
+
+{
+    "title": "TEST POST FOR 2",
+    "author": "pasi",
+    "url": "www.google.com",
+    "likes": 5,
+    "userId": "5f219bf310bb7018c86468bb"
+}
