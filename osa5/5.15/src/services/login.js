@@ -6,9 +6,4 @@ const login = async credentials => {
   return response.data
 }
 
-//FOR TEST
-/* "username": "mluukkai",
-    "password": "salainen"*/
-
-
 export default { login }

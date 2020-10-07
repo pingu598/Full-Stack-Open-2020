@@ -41,15 +41,12 @@ const App = () => {
       .create(blogObject)
       .then(returnedBlog => {
         setBlogs(blogs.concat(returnedBlog))
-        //setNotificationMessage(`a new blog ${blogObject.title} by ${blogObject.author} added`)
         setTimeout(() => {
 
-          //setNotificationMessage(null)
         }, 3000)
       }).catch(error => {
-        //setErrorMessage('Error adding blog')
         setTimeout(() => {
-          //setErrorMessage(null)
+         
         }, 3000)
       })
 
@@ -97,9 +94,8 @@ const App = () => {
       setUsername('')
       setPassword('')
     } catch (exception) {
-      //setErrorMessage('wrong username or password')
       setTimeout(() => {
-        //setErrorMessage(null)
+        
       }, 3000)
     }
   }
@@ -123,7 +119,6 @@ const App = () => {
             blog={blog}
             createLike={addLikes}
             removeBlog={removeBlog}
-            //userName={user.username}
           />
         ).sort((b,a) => {
           return a.props.blog.likes-b.props.blog.likes
@@ -163,25 +158,6 @@ const App = () => {
       }
     </div>
   )
-
-  /*const Notification = ({ message }) => {
-    if (message === null) {
-      return null
-    }
-
-    if(errorMessage !== null ){
-      return <div className="error">
-        {message}
-      </div>
-    }
-
-    else return (
-      <div className="notification">
-        {message}
-      </div>
-    )
-  }*/
-
 
   return (
     <div>

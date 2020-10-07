@@ -1,11 +1,5 @@
 import React, { useState } from 'react'
 
-
-/* <Notification message={notificationMessage}/>
-        <Notification message={errorMessage}/>
-*/
-
-
 const BlogForm = ({ createBlog }) => {
   const [setTitle, setNewTitle] = useState('')
   const [setAuthor, setNewAuthor] = useState('')

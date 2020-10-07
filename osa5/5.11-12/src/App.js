@@ -41,13 +41,9 @@ const App = () => {
       .create(blogObject)
       .then(returnedBlog => {
         setBlogs(blogs.concat(returnedBlog))
-        //setNotificationMessage(`a new blog ${blogObject.title} by ${blogObject.author} added`)
         setTimeout(() => {
-
-          //setNotificationMessage(null)
         }, 3000)
       }).catch(error => {
-        //setErrorMessage('Error adding blog')
         setTimeout(() => {
           //setErrorMessage(null)
         }, 3000)
@@ -97,9 +93,7 @@ const App = () => {
       setUsername('')
       setPassword('')
     } catch (exception) {
-      //setErrorMessage('wrong username or password')
       setTimeout(() => {
-        //setErrorMessage(null)
       }, 3000)
     }
   }
